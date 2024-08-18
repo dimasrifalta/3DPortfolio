@@ -166,6 +166,33 @@ const projects = [
 		netlify_link: "https://presentation-io.vercel.app/",
 	},
 	{
+		name: "AI Interview",
+		description:
+			"AI Interview is your personal AI interview coach designed to enhance your job prospects. With AI-powered interview preparation, it helps you refine your answers and boost your confidence, doubling your chances of landing that job offer.",
+		tags: [
+			{
+				name: "Neon",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Next.js",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Gemini AI",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "TailwindCSS",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/aiinterviewmocker.webp",
+		source_code_link:
+			"https://github.com/dimasrifalta/ai-interview-mocker",
+		netlify_link: "https://bucek-ai-interview.vercel.app/",
+	},
+	{
 		name: "MY Memories",
 		description:
 			"MY Memories is an app for uploading and sharing photos of daily life moments. Capture, store, and cherish your everyday experiences. Keep your memories alive and accessible anytime.",
