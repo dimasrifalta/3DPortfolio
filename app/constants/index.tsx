@@ -300,7 +300,7 @@ const projects = [
 			},
 		
 		],
-		image: "/projectimg/portfoliosample.webp",
+		image: "/projectimg/apoteksariasih.webp",
 		source_code_link: "https://google.com",
 		netlify_link: "https://google.com",
 	},
