@@ -3,7 +3,12 @@ import CanvasLoader from "@/app/components/Loader";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
-
+const isWebGLSupported = () => {
+	if (!window.WebGLRenderingContext) return false;
+	const canvas = document.createElement('canvas');
+	const context = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+	return !!context;
+  };
 const Computers = ({ isMobile }: { isMobile: boolean }) => {
 	const computer = useGLTF("/old_computers/scene.gltf");
 	return (
@@ -45,6 +50,16 @@ const ComputersCanvas = () => {
 			mediaQuery.removeEventListener("change", handleMediaQueryChange);
 		};
 	}, []);
+
+	const [webGLSupported, setWebGLSupported] = useState(false);
+
+	useEffect(() => {
+	  setWebGLSupported(isWebGLSupported());
+	}, []);
+  
+	if (!webGLSupported) {
+	  return null; // Or an alternative component like <div>WebGL not supported</div>
+	}
 
 	return (
 		<Canvas
