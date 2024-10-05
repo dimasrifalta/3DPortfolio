@@ -193,6 +193,33 @@ const projects = [
 		netlify_link: "https://bucek-ai-interview.vercel.app/",
 	},
 	{
+		name: "Bucek Loop",
+		description:
+			"Bucek Loop is a collaborative workspace that lets teams create, share, and work together on projects seamlessly. It combines flexible pages with reusable components that sync across different apps, making it easy to stay organized and up-to-date.",
+		tags: [
+			{
+				name: "Firebase",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Next.js",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Gemini AI",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "TailwindCSS",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/bucekloop.webp",
+		source_code_link:
+			"https://github.com/dimasrifalta/microsoft-loop",
+		netlify_link: "https://bucek-loop.vercel.app/",
+	},
+	{
 		name: "MY Memories",
 		description:
 			"MY Memories is an app for uploading and sharing photos of daily life moments. Capture, store, and cherish your everyday experiences. Keep your memories alive and accessible anytime.",
