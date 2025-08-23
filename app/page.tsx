@@ -13,17 +13,37 @@ import {
 export default function Home() {
 	return (
 		<div className="relative z-0 bg-primary font-sans">
-			<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+			{/* Hero Section */}
+			<div className="relative bg-hero-pattern bg-cover bg-no-repeat bg-center">
 				<Navbar />
 				<Hero />
 			</div>
-			<About />
-			<Experience />
-			{/* <Tech /> */}
-			<Works />
-			<Feedbacks />
+
+			{/* About Section */}
+			<section className="paddingX py-20">
+				<About />
+			</section>
+
+			{/* Experience Section */}
+			<section className="paddingX py-20">
+				<Experience />
+			</section>
+
+			{/* Projects Section */}
+			<section className="paddingX py-20">
+				<Works />
+			</section>
+
+			{/* Testimonials Section */}
+			<section className="paddingX py-20">
+				<Feedbacks />
+			</section>
+
+			{/* Contact Section with Stars */}
 			<div className="relative z-0">
-				<Contact />
+				<section className="paddingX py-20">
+					<Contact />
+				</section>
 				<StarsCanvas />
 			</div>
 		</div>
